@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+.venv
+venv/
+
+# YOLO / TensorRT 모델 (용량 큼)
+airport_cctv/models/*.engine
+airport_cctv/models/*.onnx
+airport_cctv/models/*.pt
+
+# 로그 / 클립 / DB (런타임 생성 파일)
+airport_cctv/logs/*.csv
+airport_cctv/logs/*.log
+airport_cctv/logs/*.json
+airport_cctv/clips/
+airport_cctv/logs/events.db
+
+# Node.js
+airport_cctv_frontend/node_modules/
+airport_cctv_frontend/dist/
+airport_cctv_frontend/.env
+
+# 기타
+.DS_Store
+*.swp
+*.swo
+Thumbs.db

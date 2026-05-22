@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 5s      # 5초마다 Jetson에서 메트릭 수집
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: "airport_cctv"
+    static_configs:
+      - targets: ["192.168.116.228:8000"]  # Jetson IP
+    metrics_path: "/prometheus"
